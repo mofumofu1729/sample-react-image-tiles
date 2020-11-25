@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+
+import Selector from './Selector';
+import ImageTile from './ImageTile';
+import './index.css';
+import './custom.css';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <Selector />
+      <ImageTile/ >
+      <div id="user-info-storage" data-user-email='okimoto@cv.com'></div>
+      <div id="image-cluster-info-storage" data-image-cluster='2'></div>
+      <div id="log-storage" data-log='[]'></div>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
